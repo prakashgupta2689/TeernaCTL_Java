@@ -44,30 +44,30 @@ public class StreamExamplesWithStringList {
         stateList.stream()
                 .forEach(p -> System.out.print(p.getCode() + " "));
 
-        //Given a list of state objects, print the state codes that begin with A
+        //Given a list of state objects, print the state codes that begin with misc.A
         System.out.println(" ");
-        System.out.print("Given a list of state objects, print the state codes that begin with A: ");
+        System.out.print("Given a list of state objects, print the state codes that begin with misc.A: ");
 
         stateList.stream()
-                .filter(p -> p.getCode().startsWith("A"))
+                .filter(p -> p.getCode().startsWith("misc.A"))
                 .forEach(p -> System.out.print(p.getCode() + " "));
 
-        //Given a list of state objects, modify names to upper case, and print names whose codes begin with A.
+        //Given a list of state objects, modify names to upper case, and print names whose codes begin with misc.A.
         System.out.println(" ");
-        System.out.print("Modify names to upper case, and print names whose codes begin with A: ");
+        System.out.print("Modify names to upper case, and print names whose codes begin with misc.A: ");
 
         stateList.stream()
-                .filter(p -> p.getCode().startsWith("A"))
+                .filter(p -> p.getCode().startsWith("misc.A"))
                 .map(p -> p.getName().toUpperCase())
                 .forEach(p -> System.out.print(p + " "));
 
-        //Given a list of state objects, modify names to upper case, and print names whose codes begin with A and sorted in alphabetical order
+        //Given a list of state objects, modify names to upper case, and print names whose codes begin with misc.A and sorted in alphabetical order
 
         System.out.println(" ");
-        System.out.print("Modify names to upper case, and print names whose codes begin with A and sorted in alphabetical order: ");
+        System.out.print("Modify names to upper case, and print names whose codes begin with misc.A and sorted in alphabetical order: ");
 
         stateList.stream()
-                .filter(p -> p.getCode().startsWith("A"))
+                .filter(p -> p.getCode().startsWith("misc.A"))
                 .map(p -> p.getName().toUpperCase())
                 .sorted((p1,p2) -> p2.compareTo(p1))
                 .forEach(p -> System.out.print(p + " "));
@@ -153,6 +153,6 @@ public class StreamExamplesWithStringList {
 
         namesList.stream()
                 .reduce((p1, p2) -> p1.length() > p2.length() ? p1 : p2)
-                .ifPresent(p -> System.out.println(p));
+                .ifPresent(System.out::println);
     }
 }

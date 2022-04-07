@@ -4,12 +4,12 @@ public class RotateBy90Degrees {
 
     /**
      * rotate a 2d array by 90 degree in clockwise direction
-     * Ex:  A[][]   a b c d  -----> m i e a
+     * Ex:  misc.A[][]   a b c d  -----> m i e a
      *              e f g h         n j f b
      *              i j k l         o k g c
      *              m n o p         p l h d
      *
-     *      approach: take transpose of A[][]-> A' = a e i m ---> reverse the each column to get rotate by 90
+     *      approach: take transpose of misc.A[][]-> misc.A' = a e i m ---> reverse the each column to get rotate by 90
      *                                               b f j n
      *                                               c g k o
      *                                               d h l p

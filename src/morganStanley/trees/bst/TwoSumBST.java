@@ -2,7 +2,7 @@ package morganStanley.trees.bst;
 
 public class TwoSumBST {
         static final int MAX_SIZE= 100;
-// A BST node
+// misc.A BST node
         static class node
         {
             int val;
@@ -17,7 +17,7 @@ public class TwoSumBST {
             node []array;
         };
 
-// A utility function to create a stack of given size
+// misc.A utility function to create a stack of given size
         static Stack createStack(int size)
         {
             Stack stack = new Stack();
@@ -158,7 +158,7 @@ public class TwoSumBST {
             }
         }
 
-// A utility function to create BST node
+// misc.A utility function to create BST node
         static node NewNode(int val)
         {
             node tmp = new node();

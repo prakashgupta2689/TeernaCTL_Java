@@ -13,9 +13,9 @@ import java.util.Map;
  5. You have to find the number of employees under each manager in the hierarchy not just their direct repartees.
  Ex: N = 6
  Employee   Manager
- A          C
- B          C
- C          F
+ misc.A          misc.C
+ misc.B          misc.C
+ misc.C          F
  D          E
  E          F
  F          F
@@ -27,9 +27,9 @@ public class FindNumberOfEmployeesUnderEveryEmployee {
 
         //mapping of employee and his/her manager
         HashMap<String, String> empManagerMap = new HashMap<>();
-        empManagerMap.put("A", "C");
-        empManagerMap.put("B", "C");
-        empManagerMap.put("C", "F");
+        empManagerMap.put("misc.A", "misc.C");
+        empManagerMap.put("misc.B", "misc.C");
+        empManagerMap.put("misc.C", "F");
         empManagerMap.put("D", "E");
         empManagerMap.put("E", "F");
         empManagerMap.put("F", "F");
@@ -42,7 +42,7 @@ public class FindNumberOfEmployeesUnderEveryEmployee {
 
     private static HashMap<String, Integer> noOfEmployeesUnderEveryEmployee(HashMap<String, String> empManagerMap, int N) {
 
-        //Now put the employees under the direct managers. Ex: C -> A, B  E-> D  F-> C, E
+        //Now put the employees under the direct managers. Ex: misc.C -> misc.A, misc.B  E-> D  F-> misc.C, E
         HashMap<String, HashSet<String>> reportMap = new HashMap<>();
         String ceo = "";
         for(String emp: empManagerMap.keySet()){

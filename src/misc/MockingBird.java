@@ -1,4 +1,8 @@
-public class MockingBird extends Bird{
+package misc;
+
+import misc.Bird;
+
+public class MockingBird extends Bird {
 
     int wings;
     static int numOfMockingBirds;

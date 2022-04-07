@@ -6,7 +6,7 @@ import java.io.*;
 import java.math.*;
 import java.util.*;
 
-/* A binary tree node has data,
+/* misc.A binary tree node has data,
 pointer to left child and a
 pointer to right child */
 class Node {
@@ -64,7 +64,7 @@ class Solution
     static nodeInfo largestBST(Node root)
     {
 
-        // Base cases : When tree is empty or it has
+        // misc.Base cases : When tree is empty or it has
         // one child.
         if(root == null)
             return new nodeInfo(0, MIN, MAX, 0, true);

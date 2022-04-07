@@ -1,3 +1,5 @@
+package misc;
+
 import java.io.*;
 import java.util.*;
 
@@ -23,14 +25,14 @@ public class FATExam {
             System.out.print(Unique_array[i] + " ");
         }
 
-        String pathName = "C:\\Users\\teern\\Documents\\GCP\\numbers.txt";
-        String outputPathName = "C:\\Users\\teern\\Documents\\GCP\\Number_count.txt";
+        String pathName = "misc.C:\\Users\\teern\\Documents\\GCP\\numbers.txt";
+        String outputPathName = "misc.C:\\Users\\teern\\Documents\\GCP\\Number_count.txt";
         checkOccurancesInFile(pathName, outputPathName, Unique_array);
     }
 
     public static void checkOccurancesInFile(String pathName, String outputPathName, int[] unique_array) {
 
-        File file = new File("C:\\Users\\teern\\Documents\\GCP\\numbers.txt");
+        File file = new File("misc.C:\\Users\\teern\\Documents\\GCP\\numbers.txt");
         Scanner sc = null;
         try {
             sc = new Scanner(file);

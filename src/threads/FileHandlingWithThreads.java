@@ -13,8 +13,8 @@ public class FileHandlingWithThreads {
 
     public static void main(String[] args) {
 
-        //read numbers from numbers.txt --> C:\Users\teern\Documents\GCP
-        File file = new File("C:\\Users\\teern\\Documents\\GCP\\numbers.txt");
+        //read numbers from numbers.txt --> misc.C:\Users\teern\Documents\GCP
+        File file = new File("misc.C:\\Users\\teern\\Documents\\GCP\\numbers.txt");
         Scanner sc = null;
         try {
             sc = new Scanner(file);

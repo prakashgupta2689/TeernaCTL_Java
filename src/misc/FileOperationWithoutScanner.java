@@ -1,3 +1,5 @@
+package misc;
+
 import java.io.*;
 
 public class FileOperationWithoutScanner {
@@ -7,7 +9,7 @@ public class FileOperationWithoutScanner {
         int count = 0;
 
         File file = new File(
-                "C:\\Users\\teern\\Documents\\GCP\\numbers.txt");
+                "misc.C:\\Users\\teern\\Documents\\GCP\\numbers.txt");
 
         BufferedReader br
                 = new BufferedReader(new FileReader(file));

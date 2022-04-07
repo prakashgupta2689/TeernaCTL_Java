@@ -1,3 +1,5 @@
+package misc;
+
 import java.util.*;
 class VehicleStateException extends Exception
 {

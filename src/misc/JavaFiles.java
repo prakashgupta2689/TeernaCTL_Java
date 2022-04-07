@@ -1,3 +1,5 @@
+package misc;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -11,14 +13,14 @@ public class JavaFiles {
         System.out.print("Enter the any number: ");
         n = sc.nextInt();
 
-        String pathName = "C:\\Users\\teern\\Documents\\GCP\\numbers.txt";
+        String pathName = "misc.C:\\Users\\teern\\Documents\\GCP\\numbers.txt";
         boolean isNumberFound = findNumberInFile(pathName, n);
         
         if(isNumberFound){
             System.out.println("Number matched in numbers.tx: displaying armstrong numbers");
             printArmstrong(n);
         }else{
-            String newFilePath = "C:\\Users\\teern\\Documents\\GCP\\new_numbers.txt";
+            String newFilePath = "misc.C:\\Users\\teern\\Documents\\GCP\\new_numbers.txt";
             boolean isMatched = findNumberInFile(newFilePath, n);
 
             if(isMatched){

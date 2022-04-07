@@ -1,3 +1,7 @@
+package misc;
+
+import java.util.Map;
+
 public class Bird {
 
     int legs;
@@ -17,4 +21,5 @@ public class Bird {
     public static void eat(){
         System.out.println("I am a bird. I eat!");
     }
+
 }

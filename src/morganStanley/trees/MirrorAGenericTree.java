@@ -12,11 +12,11 @@ public class MirrorAGenericTree {
  *
  * Build Faith : We must have faith that if our code can give us an output for the entire generic tree, then it can definitely give as an output its subtree.Those subtrees of that generic tree are considered where each root of that sub tree is a child of the root of the original generic tree.
  * As shown in figure 2, we have faith that we can make mirror trees for the 3 highlighted sub trees with roots 20, 30 and 40.
- * imgThe output of those sub trees is seen in Figure 2(B).
+ * imgThe output of those sub trees is seen in Figure 2(misc.B).
  * You just need to believe. Don't focus on "HOW" that will happen.
  *
- * Expectation meets Faith : We see that figure 2 is not yet complete. The final output tree must look like Figure 1(B).
- * For that, we need to change the positions of the children of the root node in Figure 2(B).
+ * Expectation meets Faith : We see that figure 2 is not yet complete. The final output tree must look like Figure 1(misc.B).
+ * For that, we need to change the positions of the children of the root node in Figure 2(misc.B).
  * The families of these sub trees should get reversed for getting the desired output.
  * We had already mirrored 20, 30 and 40. By reversing their families, the family of 10 will get mirrored too.
  * https://www.pepcoding.com/resources/online-java-foundation/generic-tree/mirror_of_generic_tree/topic

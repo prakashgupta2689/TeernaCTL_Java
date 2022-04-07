@@ -1,3 +1,5 @@
+package misc;
+
 public interface Animal {
 
     public static void walk(){
