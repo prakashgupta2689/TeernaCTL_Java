@@ -25,12 +25,14 @@ public class StreamExamplesWithStringList {
 
         //Given a String, find the first non-repeated character in it using Stream functions
         String inputString = "I love Java!";
+
+        //create a fmap - 1st loop, iterate through the string and get the freq, the first char in the string to have freq 1 will be the result
         Character result = inputString.chars()
                 .mapToObj(p -> Character.toLowerCase((char) p))
-                .collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,Collectors.counting()))
+                .collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,Collectors.counting())) //freq map, used a linkedHashMap to maintain the order
                 .entrySet()
                 .stream()
-                .filter(entry -> entry.getValue() == 1)
+                .filter(entry -> entry.getValue() == 1) //check if freq == 1
                 .map(entry -> entry.getKey())
                 .findFirst()
                 .get();
@@ -154,5 +156,16 @@ public class StreamExamplesWithStringList {
         namesList.stream()
                 .reduce((p1, p2) -> p1.length() > p2.length() ? p1 : p2)
                 .ifPresent(System.out::println);
+
+        //count the number of occurrences in a string
+        String str = "Hey There!";
+        //find the number of occurrences of 'e'
+
+     System.out.println("Number of occurrences of e:");
+        long occurrences = str.chars()
+                .filter(s -> s == 'e')
+                .count();
+
+     System.out.println(occurrences);
     }
 }
