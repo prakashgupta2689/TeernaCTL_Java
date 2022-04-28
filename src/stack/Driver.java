@@ -1,5 +1,7 @@
 package stack;
 
+import java.util.Stack;
+
 public class Driver {
 
     public static void main(String[] args) {
@@ -15,7 +17,7 @@ public class Driver {
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
-        //System.out.println(stack.pop());
+        System.out.println(stack.pop());
 
         //stack using two queues
 
@@ -26,6 +28,7 @@ public class Driver {
 
         System.out.println(StackUsingTwoQueues.pop());
         System.out.println(StackUsingTwoQueues.top());
+
 
     }
 }

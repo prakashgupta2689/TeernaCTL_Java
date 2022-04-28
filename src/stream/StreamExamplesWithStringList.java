@@ -167,5 +167,13 @@ public class StreamExamplesWithStringList {
                 .count();
 
      System.out.println(occurrences);
+
+     System.out.println("Remove duplicate characters from String");
+     String str1 = "I love India!";
+     StringBuilder sb = new StringBuilder();
+     str1.chars()
+             .distinct()
+             .forEach(s -> sb.append(s));
     }
-}
+    }
+

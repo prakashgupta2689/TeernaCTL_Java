@@ -27,7 +27,7 @@ public class PrintingNumbersInSequence {
 
                     while (number < limit) {
                         synchronized (lock) {
-                            while (number % limit == 1) {
+                            while (number % 2 == 1) {
 
                                 try {
                                     lock.wait();
@@ -50,7 +50,7 @@ public class PrintingNumbersInSequence {
 
                     synchronized (lock){
 
-                        while (number % limit == 0){
+                        while (number % 2 == 0){
 
                             try {
                                 lock.wait();
