@@ -1,5 +1,8 @@
 package misc.morganStanley.linkedLists;
 
+/**
+ *
+ * */
 public class DetectLoop {
 
     public static void main(String[] args) {

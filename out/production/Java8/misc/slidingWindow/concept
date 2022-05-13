@@ -1,0 +1,42 @@
+ex: arr= {2, 3, 5, 4, 7, 9, 1}
+and subarray size is given -- a subarray is a contiguous elements of array
+problem kya hai?
+-- 3 size ka subarray nikalna hai and unn sab subarray mein se jiska bhi sum maximum hai woh batana hai
+
+1. write the brute force soln
+2. identify the repetitive work
+ex: if you use 2 for loops to calculate the sum of all subarrays ->
+2, 3, 5, 4, 7, 9, 1 --> first subarray of size 3 -> 2, 3, 5 => x
+2nd subarray of size 3 --> with i incremented by 1 and j running from i to 3 => 3, 5, 2 = y
+
+if you observe carefully, x has elements 2, 3, 5 and y has elements 3, 5, 4 => that means the
+sum of 3, 5 is repeated. Hence, we can optimize this.
+To get y from x we can subtract 2 and add 4. Hence, you got this result using the previous step result.
+
+toh humlog kya karenge har baar ek ko ghatayenge and ek ko badhayenge. Issey kya hoga?
+humlog repetitive work nhi kar rhe.
+iss ghatane and badhane ko with the help of i and j ko sliding window kehte hai
+
+How to identify problems involving sliding window?
+- given string or array
+- asked something about subarray or substring
+- window size -> if not given you need to find out
+
+two types of sliding window ?
+- fixed sliding window
+- variable sliding window => window size will not be given but can be asked in question
+=> asked to find largest window or smallest window
+
+Problems:
+- Fixed:
+    - Max/Min sub array sum of size K
+    - 1st negative in every window of size K
+    - count occurances of anagrams
+    - Maximum of all subarrays of size K
+
+- Variable
+    - Largest/Smallest subarray of sum K
+    - Largest substring with K distinct characters
+    - Length of largest substring with or without repeating characters
+    - Pick Toy
+    - minimum window substring
